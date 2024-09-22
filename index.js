@@ -6,6 +6,7 @@ const slavka = document.getElementById('slavka');
 const solovey = document.getElementById('solovey');
 const zarynka = document.getElementById('zarynka');
 const main = document.getElementById('main');
+let activeButton = forest;
 
 const audio = new Audio('./assets/audio/forest.mp3');
 let isPlaying = false;
@@ -32,6 +33,9 @@ function onButtonClicked(e) {
     audio.load();
     play();
     main.style.backgroundImage = `url(./assets/img/${e.target.id}.jpg)`;
+    activeButton.classList.remove('active-button');
+    e.target.classList.add('active-button');
+    activeButton = e.target;
 }
 
 function play() {
