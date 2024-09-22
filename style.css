@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+.bird-logo {
+    width: 60px;
+}
+
+.list {
+    color: white;
+    list-style-type: none;
+    display: flex;
+}
+
+.list-item {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.main {
+    background-image: url('./assets/img/forest.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.github-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+.footer-text {
+    display: flex;
+}
+
+.rss-logo {
+    width: 150px;
+}
